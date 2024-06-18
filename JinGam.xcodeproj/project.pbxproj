@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D07D4502C1EBC78008A0381 /* JinGamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D44F2C1EBC78008A0381 /* JinGamApp.swift */; };
+		0D07D4522C1EBC78008A0381 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D4512C1EBC78008A0381 /* ContentView.swift */; };
+		0D07D4542C1EBC79008A0381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D07D4532C1EBC79008A0381 /* Assets.xcassets */; };
+		0D07D4572C1EBC79008A0381 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D07D4562C1EBC79008A0381 /* Preview Assets.xcassets */; };
+		0D07D45F2C1EBC9C008A0381 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D45E2C1EBC9C008A0381 /* HapticManager.swift */; };
+		0D07D4662C1EC4DB008A0381 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D4652C1EC4DB008A0381 /* Haptic.swift */; };
+		0D07D4682C1EC520008A0381 /* GameTogetherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D4672C1EC520008A0381 /* GameTogetherManager.swift */; };
+		0D07D46A2C1EC542008A0381 /* GameTogether.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D4692C1EC542008A0381 /* GameTogether.swift */; };
+		0D07D46E2C1ED0ED008A0381 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D46D2C1ED0ED008A0381 /* ContentViewModel.swift */; };
+		0D07D4742C1F37CE008A0381 /* UserHapticPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D4732C1F37CE008A0381 /* UserHapticPlayerView.swift */; };
+		0D07D4792C1F4AAA008A0381 /* Double+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D4782C1F4AAA008A0381 /* Double+extension.swift */; };
+		0D07D47B2C1F5033008A0381 /* RoundRectButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D07D47A2C1F5033008A0381 /* RoundRectButtonStyle.swift */; };
+		0DB3AA462C2131D600919E44 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3AA452C2131D600919E44 /* PlayerController.swift */; };
+		0DB3AA4B2C21327500919E44 /* PlayerViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3AA4A2C21327500919E44 /* PlayerViewable.swift */; };
+		0DB3AA4D2C21344500919E44 /* PlayerControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3AA4C2C21344500919E44 /* PlayerControllable.swift */; };
+		0DB3AA4F2C2136CF00919E44 /* OtherHapticPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3AA4E2C2136CF00919E44 /* OtherHapticPlayerView.swift */; };
+		0DB3AA552C217A8600919E44 /* HapticSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3AA542C217A8600919E44 /* HapticSlider.swift */; };
+		0DB3AA582C21896B00919E44 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3AA572C21896B00919E44 /* SegmentedControl.swift */; };
+		0DB3AA5B2C225A5C00919E44 /* SubmitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3AA5A2C225A5C00919E44 /* SubmitResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D07D44C2C1EBC78008A0381 /* JinGam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JinGam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D07D44F2C1EBC78008A0381 /* JinGamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinGamApp.swift; sourceTree = "<group>"; };
+		0D07D4512C1EBC78008A0381 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D07D4532C1EBC79008A0381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D07D4562C1EBC79008A0381 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D07D45E2C1EBC9C008A0381 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		0D07D4652C1EC4DB008A0381 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
+		0D07D4672C1EC520008A0381 /* GameTogetherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTogetherManager.swift; sourceTree = "<group>"; };
+		0D07D4692C1EC542008A0381 /* GameTogether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTogether.swift; sourceTree = "<group>"; };
+		0D07D46B2C1ED0C7008A0381 /* JinGam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JinGam.entitlements; sourceTree = "<group>"; };
+		0D07D46D2C1ED0ED008A0381 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		0D07D4732C1F37CE008A0381 /* UserHapticPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHapticPlayerView.swift; sourceTree = "<group>"; };
+		0D07D4782C1F4AAA008A0381 /* Double+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+extension.swift"; sourceTree = "<group>"; };
+		0D07D47A2C1F5033008A0381 /* RoundRectButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundRectButtonStyle.swift; sourceTree = "<group>"; };
+		0DB3AA452C2131D600919E44 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		0DB3AA4A2C21327500919E44 /* PlayerViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewable.swift; sourceTree = "<group>"; };
+		0DB3AA4C2C21344500919E44 /* PlayerControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControllable.swift; sourceTree = "<group>"; };
+		0DB3AA4E2C2136CF00919E44 /* OtherHapticPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherHapticPlayerView.swift; sourceTree = "<group>"; };
+		0DB3AA542C217A8600919E44 /* HapticSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticSlider.swift; sourceTree = "<group>"; };
+		0DB3AA572C21896B00919E44 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		0DB3AA5A2C225A5C00919E44 /* SubmitResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitResult.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D07D4492C1EBC78008A0381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D07D4432C1EBC78008A0381 = {
+			isa = PBXGroup;
+			children = (
+				0D07D44E2C1EBC78008A0381 /* JinGam */,
+				0D07D44D2C1EBC78008A0381 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D07D44D2C1EBC78008A0381 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D44C2C1EBC78008A0381 /* JinGam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D07D44E2C1EBC78008A0381 /* JinGam */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D46B2C1ED0C7008A0381 /* JinGam.entitlements */,
+				0D07D44F2C1EBC78008A0381 /* JinGamApp.swift */,
+				0D07D4532C1EBC79008A0381 /* Assets.xcassets */,
+				0D07D4722C1F37BA008A0381 /* Component */,
+				0D07D4772C1F4A9D008A0381 /* Extension */,
+				0D07D4632C1EC4B6008A0381 /* Model */,
+				0D07D4552C1EBC79008A0381 /* Preview Content */,
+				0D07D45D2C1EBC8B008A0381 /* Utility */,
+				0D07D4642C1EC4BD008A0381 /* View */,
+			);
+			path = JinGam;
+			sourceTree = "<group>";
+		};
+		0D07D4552C1EBC79008A0381 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D4562C1EBC79008A0381 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D07D45D2C1EBC8B008A0381 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D45E2C1EBC9C008A0381 /* HapticManager.swift */,
+				0D07D4672C1EC520008A0381 /* GameTogetherManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0D07D4602C1EC27E008A0381 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D4512C1EBC78008A0381 /* ContentView.swift */,
+				0D07D46D2C1ED0ED008A0381 /* ContentViewModel.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		0D07D4632C1EC4B6008A0381 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D4652C1EC4DB008A0381 /* Haptic.swift */,
+				0D07D4692C1EC542008A0381 /* GameTogether.swift */,
+				0DB3AA5A2C225A5C00919E44 /* SubmitResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D07D4642C1EC4BD008A0381 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D4602C1EC27E008A0381 /* ContentView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D07D4722C1F37BA008A0381 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3AA562C21894600919E44 /* SegmentedControl */,
+				0DB3AA512C217A6800919E44 /* HapticSlider */,
+				0DB3AA502C21759E00919E44 /* Style */,
+				0DB3AA442C2131C900919E44 /* HapticPlayer */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0D07D4772C1F4A9D008A0381 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D4782C1F4AAA008A0381 /* Double+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0DB3AA442C2131C900919E44 /* HapticPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3AA492C21326400919E44 /* Protocol */,
+				0DB3AA482C21322C00919E44 /* Controller */,
+				0DB3AA472C21322400919E44 /* View */,
+			);
+			path = HapticPlayer;
+			sourceTree = "<group>";
+		};
+		0DB3AA472C21322400919E44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D4732C1F37CE008A0381 /* UserHapticPlayerView.swift */,
+				0DB3AA4E2C2136CF00919E44 /* OtherHapticPlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DB3AA482C21322C00919E44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3AA452C2131D600919E44 /* PlayerController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0DB3AA492C21326400919E44 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3AA4A2C21327500919E44 /* PlayerViewable.swift */,
+				0DB3AA4C2C21344500919E44 /* PlayerControllable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0DB3AA502C21759E00919E44 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				0D07D47A2C1F5033008A0381 /* RoundRectButtonStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		0DB3AA512C217A6800919E44 /* HapticSlider */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3AA542C217A8600919E44 /* HapticSlider.swift */,
+			);
+			path = HapticSlider;
+			sourceTree = "<group>";
+		};
+		0DB3AA562C21894600919E44 /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3AA572C21896B00919E44 /* SegmentedControl.swift */,
+			);
+			path = SegmentedControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D07D44B2C1EBC78008A0381 /* JinGam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D07D45A2C1EBC79008A0381 /* Build configuration list for PBXNativeTarget "JinGam" */;
+			buildPhases = (
+				0D07D4482C1EBC78008A0381 /* Sources */,
+				0D07D4492C1EBC78008A0381 /* Frameworks */,
+				0D07D44A2C1EBC78008A0381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JinGam;
+			productName = JinGam;
+			productReference = 0D07D44C2C1EBC78008A0381 /* JinGam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D07D4442C1EBC78008A0381 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0D07D44B2C1EBC78008A0381 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 0D07D4472C1EBC78008A0381 /* Build configuration list for PBXProject "JinGam" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D07D4432C1EBC78008A0381;
+			productRefGroup = 0D07D44D2C1EBC78008A0381 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D07D44B2C1EBC78008A0381 /* JinGam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D07D44A2C1EBC78008A0381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D07D4572C1EBC79008A0381 /* Preview Assets.xcassets in Resources */,
+				0D07D4542C1EBC79008A0381 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D07D4482C1EBC78008A0381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D07D4742C1F37CE008A0381 /* UserHapticPlayerView.swift in Sources */,
+				0D07D4662C1EC4DB008A0381 /* Haptic.swift in Sources */,
+				0DB3AA5B2C225A5C00919E44 /* SubmitResult.swift in Sources */,
+				0D07D4682C1EC520008A0381 /* GameTogetherManager.swift in Sources */,
+				0D07D47B2C1F5033008A0381 /* RoundRectButtonStyle.swift in Sources */,
+				0DB3AA462C2131D600919E44 /* PlayerController.swift in Sources */,
+				0DB3AA4D2C21344500919E44 /* PlayerControllable.swift in Sources */,
+				0D07D4522C1EBC78008A0381 /* ContentView.swift in Sources */,
+				0DB3AA552C217A8600919E44 /* HapticSlider.swift in Sources */,
+				0D07D46E2C1ED0ED008A0381 /* ContentViewModel.swift in Sources */,
+				0D07D46A2C1EC542008A0381 /* GameTogether.swift in Sources */,
+				0D07D45F2C1EBC9C008A0381 /* HapticManager.swift in Sources */,
+				0D07D4792C1F4AAA008A0381 /* Double+extension.swift in Sources */,
+				0D07D4502C1EBC78008A0381 /* JinGamApp.swift in Sources */,
+				0DB3AA4B2C21327500919E44 /* PlayerViewable.swift in Sources */,
+				0DB3AA582C21896B00919E44 /* SegmentedControl.swift in Sources */,
+				0DB3AA4F2C2136CF00919E44 /* OtherHapticPlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D07D4582C1EBC79008A0381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D07D4592C1EBC79008A0381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D07D45B2C1EBC79008A0381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JinGam/JinGam.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JinGam/Preview Content\"";
+				DEVELOPMENT_TEAM = T8C5HKRLH5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newJunsung.JinGam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D07D45C2C1EBC79008A0381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JinGam/JinGam.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JinGam/Preview Content\"";
+				DEVELOPMENT_TEAM = T8C5HKRLH5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newJunsung.JinGam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D07D4472C1EBC78008A0381 /* Build configuration list for PBXProject "JinGam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D07D4582C1EBC79008A0381 /* Debug */,
+				0D07D4592C1EBC79008A0381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D07D45A2C1EBC79008A0381 /* Build configuration list for PBXNativeTarget "JinGam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D07D45B2C1EBC79008A0381 /* Debug */,
+				0D07D45C2C1EBC79008A0381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D07D4442C1EBC78008A0381 /* Project object */;
+}
