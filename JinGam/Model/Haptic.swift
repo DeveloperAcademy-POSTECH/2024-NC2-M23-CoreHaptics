@@ -13,23 +13,17 @@ struct Haptic: Codable, Equatable, HapticEventParameterable {
     let sharpness: Float
     let duration: Float
     
-    static func == (lhs: Haptic, rhs: Haptic) -> Bool {
-        return lhs.intensity == rhs.intensity
-        && lhs.sharpness == rhs.sharpness
-        && lhs.duration == rhs.duration
-    }
-    
     static func randomHaptic() -> Haptic {
-        let randomInts = [2, 4, 6, 8, 10]
+        let randomFloats: [Float] = [0.2, 0.4, 0.6, 0.8, 1]
         
-        let intensity = randomInts[(0...4).randomElement()!]
-        let sharpness = randomInts[(0...4).randomElement()!]
+        let intensity = randomFloats[(0...4).randomElement()!]
+        let sharpness = randomFloats[(0...4).randomElement()!]
         let duration = (1...5).randomElement()!
         
         return Haptic(
             name: "Computer's Haptic",
-            intensity: Float(intensity) / 10,
-            sharpness: Float(sharpness) / 10,
+            intensity: intensity,
+            sharpness: sharpness,
             duration: Float(duration)
         )
     }

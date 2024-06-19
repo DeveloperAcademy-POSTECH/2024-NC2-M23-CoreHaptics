@@ -99,7 +99,7 @@ final class ContentViewModel {
     func checkSubmit(lhs: Haptic, rhs: (intensity: Double, sharpness: Double, duration: Double)) -> SubmitResult {
         let (intensity, sharpness, duration) = rhs
         let rhs = Haptic(
-            name: "",
+            name: lhs.name,
             intensity: intensity.toFloat,
             sharpness: sharpness.toFloat,
             duration: duration.toFloat
