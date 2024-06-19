@@ -32,7 +32,6 @@ struct ContentView: View {
             .navigationBarTitleDisplayMode(.large)
             .onAppear(perform: viewModel.onAppear)
             .onReceive(viewModel.hapticsPublisher) {
-                print($0)
                 haptic = $0
             }
             .onChange(of: gameMode) { _, newValue in

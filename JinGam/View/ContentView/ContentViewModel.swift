@@ -13,12 +13,11 @@ final class ContentViewModel {
     
     private var subscriptions = Set<AnyCancellable>()
     
-    @Published private var openGameSharingView: Bool = false
     @Published private var haptic: Haptic = Haptic.randomHaptic()
     
     var hapticsPublisher: AnyPublisher<Haptic, Never> { $haptic.eraseToAnyPublisher() }
     
-    func bind() {
+    private func bind() {
         gameTogetherManager.hapticPublisher
             .sink { [weak self] haptic in
                 guard let haptic else {
@@ -70,7 +69,6 @@ final class ContentViewModel {
         
         Task {
             if gameTogetherManager.session == nil {
-                print("send...")
                 await gameTogetherManager.startSharing()
             }
             
@@ -84,7 +82,6 @@ final class ContentViewModel {
     
     func send(haptic: Haptic) {
         Task {
-            print("send...")
             do {
                 if gameTogetherManager.session == nil {
                     await gameTogetherManager.startSharing()

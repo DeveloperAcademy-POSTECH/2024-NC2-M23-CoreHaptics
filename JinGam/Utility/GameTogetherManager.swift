@@ -31,7 +31,6 @@ final class GameTogetherManager {
     }
     
     func startSharing() async {
-        print("manager startSharing")
         let together = GameTogether()
         let result = await together.prepareForActivation()
         do {
@@ -73,7 +72,6 @@ final class GameTogetherManager {
     }
 
     private func handle(_ haptic: Haptic) {
-        print(haptic)
         self.haptic = haptic
     }
 }
