@@ -56,6 +56,10 @@
     6. 커스텀한 진동을 제출한 후 결과 확인하기
     7. 실패한 경우 재시도하기
 
+## 📱앱 시현
+
+https://github.com/DeveloperAcademy-POSTECH/2024-NC2-M23-CoreHaptics/assets/107932188/0c2064a8-386a-40fa-b7be-92af2222b512
+
 ## 🛠️ About Code
 - 햅틱을 지원하지 않는 기종 등의 이유로 `HapticManager`를 만들 수 없는 상황이 되면, `nil`을 반환하게끔 함.
 ```swift
